@@ -1,0 +1,40 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Data\Migrations\20210210201102_CreateDatabase.cs" />
+    <Compile Remove="Data\Migrations\20210210201102_CreateDatabase.Designer.cs" />
+    <Compile Remove="Data\Migrations\20210210202244_CreateDatabase.cs" />
+    <Compile Remove="Data\Migrations\20210210202244_CreateDatabase.Designer.cs" />
+    <Compile Remove="Data\Migrations\20210210202742_CreateDatabase.cs" />
+    <Compile Remove="Data\Migrations\20210210202742_CreateDatabase.Designer.cs" />
+    <Compile Remove="Data\Migrations\20210210202936_CreateDatabase.cs" />
+    <Compile Remove="Data\Migrations\20210210202936_CreateDatabase.Designer.cs" />
+    <Compile Remove="Data\Migrations\20210210215627_CreateConstrictions.cs" />
+    <Compile Remove="Data\Migrations\20210210215627_CreateConstrictions.Designer.cs" />
+    <Compile Remove="Data\Migrations\20210210215829_CreateConstrictions.cs" />
+    <Compile Remove="Data\Migrations\20210210215829_CreateConstrictions.Designer.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="10.1.1" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="3.1.8" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="3.1.8">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="3.1.8" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="3.1.8">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Ruleta.Core\Ruleta.Core.csproj" />
+  </ItemGroup>
+
+</Project>
